@@ -59,7 +59,7 @@
     }
   },
   "homepage": ".",
-  "include": ["src"],
+  "include": ["src", "theme.ts"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

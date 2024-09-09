@@ -1,10 +1,11 @@
-import React from "react";
+import React, { StrictMode } from "react";
+import './App.scss';
 
-function App() {
+const App: React.FC = () => {
 
   return (
-    <>
-    </>
+    <StrictMode>
+    </StrictMode>
   )
 }
 
