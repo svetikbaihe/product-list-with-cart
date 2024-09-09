@@ -1,6 +1,6 @@
 import { ThemeConfig } from "antd"
 
-export const theme: ThemeConfig = {
+const theme: ThemeConfig = {
   token: {
     fontFamily: 'RedHatText, sans-serif'
   },
@@ -11,5 +11,14 @@ export const theme: ThemeConfig = {
       colorPrimary: 'hsl(14, 86%, 42%)',
       colorPrimaryHover: 'hsl(14, 85%, 32%)'
     },
+
+    Typography: {
+      fontSizeHeading1: 28,
+      fontSizeHeading2: 20,
+      fontSizeHeading3: 16,
+      fontSizeHeading4: 12,
+    }
   },
 }
+
+export default theme;
