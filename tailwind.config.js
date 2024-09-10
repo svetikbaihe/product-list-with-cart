@@ -10,7 +10,7 @@ export default {
       colors: {
         'error': 'hsl(14, 86%, 42%)',
         'success': 'hsl(159, 69%, 38%)',
-        'hover' : 'hsl(14, 85%, 32%)',
+        'hover': 'hsl(14, 85%, 32%)',
         'rose-50': 'hsl(20, 50%, 98%)',
         'rose-100': 'hsl(13, 31%, 94%)',
         'rose-300': 'hsl(14, 25%, 72%)',
