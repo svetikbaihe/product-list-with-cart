@@ -48,8 +48,8 @@
       "@state": ["./state"],
       "@state/*": ["./state/*"],
 
-      "@types": ["./types"],
-      "@types/*": ["./types/*"],
+      "@theme": ["./theme"],
+      "@theme/*": ["./theme/*"],
 
       "@router": ["src/router"],
       "@router/*": ["src/router/*"],
@@ -59,7 +59,7 @@
     }
   },
   "homepage": ".",
-  "include": ["src", "theme.ts"],
+  "include": ["src", "src/theme/theme.ts"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
