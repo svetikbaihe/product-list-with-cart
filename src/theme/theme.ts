@@ -15,8 +15,13 @@ const theme: ThemeConfig = {
     Typography: {
       fontSizeHeading1: 28,
       fontSizeHeading2: 20,
-      fontSizeHeading3: 16,
-      fontSizeHeading4: 12,
+      fontSizeHeading3: 12,
+      fontSizeHeading4: 16,
+      titleMarginTop: '0.5em'
+    },
+
+    Card: {
+      colorBorderSecondary: 'none'
     }
   },
 }

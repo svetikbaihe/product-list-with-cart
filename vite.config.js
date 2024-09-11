@@ -19,7 +19,7 @@ export default defineConfig({
             "@utils": path.resolve("src/utils"),
             "@services": path.resolve("src/services"),
             "@state": path.resolve("src/state"),
-            "@types": path.resolve("src/types"),
+            "@theme": path.resolve("src/theme"),
             "@router": path.resolve("src/router"),
             "@assets": path.resolve("src/assets"),
         },
