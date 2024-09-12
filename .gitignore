@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# TypeSafe SCSS Modules
+*.module.scss.d.ts

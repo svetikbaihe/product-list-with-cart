@@ -51,6 +51,9 @@
       "@theme": ["./theme"],
       "@theme/*": ["./theme/*"],
 
+      "@mock": ["./mock"],
+      "@mock/*": ["./mock/*"],
+
       "@router": ["src/router"],
       "@router/*": ["src/router/*"],
 

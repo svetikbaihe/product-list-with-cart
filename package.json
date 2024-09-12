@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite & (yarn run typed-scss:dev)",
+    "build": "(yarn run typed-scss) & tsc --noEmit && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typed-scss": "typed-scss-modules src/**/*.module.scss --nameFormat camel --aliasPrefixes.@style src/assets/style/",
     "typed-scss:dev": "yarn typed-scss --watch",
-    "lint:dev": "yarn prettier && yarn lint --fix"
+    "lint:dev": "yarn prettier && yarn lint --fix",
+    "prettier": "prettier ./src --write"
   },
   "dependencies": {
     "antd": "^5.20.5",

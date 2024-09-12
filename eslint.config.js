@@ -10,34 +10,50 @@ import typescriptEslintParser from '@typescript-eslint/parser'
 
 export default [
   {
-    parser: typescriptEslintParser,
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+
     languageOptions: {
       globals: globals.browser,
+      parser: typescriptEslintParser,
     },
-    extends: [
-      pluginJs.configs.recommended,
-      ...tseslint.configs.recommended,
-      react.configs.flat.recommended,
-      eslintConfigPrettier
-    ],
-    ignores: ['**/*.config.js', '!**/eslint.config.js'],
+
+    ignores: ['dist/**', '**/*.config.js', '!**/eslint.config.js'],
+
     plugins: {
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       '@typescript-eslint': typescriptEslingPlugin,
     },
+
+    settings: {
+      react: {
+        version: 'detect',
+        pragma: 'React',
+        fragment: 'Fragment',
+      },
+    },
+
     rules: {
       "no-console": "warn",
+
+      "react/react-in-jsx-scope": "off",
+
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
       
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
+
+      ...eslintConfigPrettier.rules,
     },
   },
+
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  react.configs.flat['recommended'],
 ]
 
 
