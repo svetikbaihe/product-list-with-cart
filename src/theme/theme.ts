@@ -1,15 +1,15 @@
-import { ThemeConfig } from "antd"
+import { ThemeConfig } from 'antd'
 
 const theme: ThemeConfig = {
   token: {
-    fontFamily: 'RedHatText, sans-serif'
+    fontFamily: 'RedHatText, sans-serif',
   },
   components: {
     Button: {
       defaultHoverColor: 'hsl(14, 86%, 42%)',
       defaultHoverBorderColor: 'hsl(14, 86%, 42%)',
       colorPrimary: 'hsl(14, 86%, 42%)',
-      colorPrimaryHover: 'hsl(14, 85%, 32%)'
+      colorPrimaryHover: 'hsl(14, 85%, 32%)',
     },
 
     Typography: {
@@ -17,13 +17,13 @@ const theme: ThemeConfig = {
       fontSizeHeading2: 20,
       fontSizeHeading3: 12,
       fontSizeHeading4: 16,
-      titleMarginTop: '0.5em'
+      titleMarginTop: '0.5em',
     },
 
     Card: {
-      colorBorderSecondary: 'none'
-    }
+      colorBorderSecondary: 'none',
+    },
   },
 }
 
-export default theme;
+export default theme

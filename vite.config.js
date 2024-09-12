@@ -20,6 +20,7 @@ export default defineConfig({
             "@services": path.resolve("src/services"),
             "@state": path.resolve("src/state"),
             "@theme": path.resolve("src/theme"),
+            "@mock": path.resolve("src/mock"),
             "@router": path.resolve("src/router"),
             "@assets": path.resolve("src/assets"),
         },

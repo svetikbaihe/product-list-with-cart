@@ -1,0 +1,7 @@
+.dessert_menu_title {
+  @apply mb-7 font-bold !important;
+}
+
+.button_cart {
+  @apply active:border-error active:text-error !important;
+}
