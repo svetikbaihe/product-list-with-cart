@@ -13,11 +13,10 @@ const theme: ThemeConfig = {
     },
 
     Typography: {
-      fontSizeHeading1: 28,
-      fontSizeHeading2: 20,
+      fontSizeHeading1: 40,
+      fontSizeHeading2: 24,
       fontSizeHeading3: 12,
       fontSizeHeading4: 16,
-      titleMarginTop: '0.5em',
     },
 
     Card: {

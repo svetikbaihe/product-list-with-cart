@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, Typography, Button } from 'antd'
 import {
   ShoppingCartOutlined,
@@ -8,60 +8,82 @@ import {
 import { DessertCardProps } from '../types'
 import cn from 'classnames'
 import styles from './styles.module.scss'
+import useContainer from '../hook'
 
 const { Title, Text } = Typography
 
 const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
-  const [count, setCount] = useState(0)
+  const {
+    cart,
+    handleDecrement,
+    handleIncrement,
+    handleAddProductToCart,
+    handleDeleteZeroAmount,
+  } = useContainer()
+  const foundProduct = cart.find(product => product.id === item.id)
 
-  const increment = () => {
-    setCount(prevCount => prevCount + 1)
+  const productAmount = foundProduct ? foundProduct.amount : 0
+
+  const handleAddToCart = () => {
+    handleAddProductToCart(item)
   }
 
-  const decrement = () => {
-    setCount(prevCount => prevCount - 1)
+  const handlePlus = () => {
+    handleIncrement({ id: item.id })
+  }
+
+  const handleMinus = () => {
+    handleDecrement({ id: item.id })
+    handleDeleteZeroAmount()
   }
 
   const classNameActiveCover = cn({
-    [styles.cardCoverActive]: count >= 1,
+    [styles.cardCoverActive]: productAmount >= 1,
   })
 
   return (
     <Card
-      cover={<img alt={item.image.alt} src={item.image.mobile} />}
+      cover={<picture>
+        <source media="(min-width: 1024px)" srcSet={item.image.desktop} />
+        <source media="(min-width: 640px)" srcSet={item.image.tablet} />
+        <img
+          alt={item.image.alt}
+          src={item.image.mobile}
+        />
+      </picture>}
       className={styles.card}
       classNames={{
         body: styles.cardBody,
         cover: cn(styles.cardCover, classNameActiveCover),
       }}
     >
-      {count === 0 && (
+      {productAmount === 0 && (
         <Button
           icon={<ShoppingCartOutlined className={styles.iconCart} />}
           className={cn(styles.absolutePosition, styles.buttonAddProducts)}
-          onClick={increment}
+          onClick={handleAddToCart}
         >
           Add to Cart
         </Button>
       )}
 
-      {count >= 1 && (
+      {productAmount >= 1 && (
         <div
           className={cn(styles.divAddRemoveProducts, styles.absolutePosition)}
         >
           <Button
             icon={<MinusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
             shape="circle"
-            onClick={decrement}
+            onClick={handleMinus}
             className={styles.buttonMinusAndPlus}
           />
 
-          <Text className={styles.counter}>{count}</Text>
+          <Text className={styles.counter}>{productAmount}</Text>
 
           <Button
             icon={<PlusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
             shape="circle"
-            onClick={increment}
+            onClick={handlePlus}
             className={styles.buttonMinusAndPlus}
           />
         </div>

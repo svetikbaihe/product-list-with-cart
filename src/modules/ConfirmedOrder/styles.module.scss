@@ -1,0 +1,83 @@
+.order {
+  @apply min-w-[240px];
+}
+
+.title_order {
+  @apply mb-2 font-bold max-[275px]:text-[2.25rem] !important;
+}
+
+.header_container {
+  @apply mb-8 !important;
+}
+
+.text_order {
+  @apply mb-8 text-rose-400 !important;
+}
+
+.order_icon {
+  @apply mb-7 mt-8;
+}
+
+.order_product_img {
+  @apply rounded-md;
+}
+
+.li_product {
+  @apply flex items-center justify-between gap-[0.625rem] max-[383px]:gap-[0.4rem] max-[320px]:block;
+}
+
+.product_list {
+  @apply rounded-lg bg-rose-100 p-6;
+}
+
+.product_price {
+  @apply mr-2 text-rose-300;
+}
+
+.product_name {
+  @apply font-semibold;
+}
+
+.product_quantity {
+  @apply mr-3 font-semibold text-error;
+}
+
+.individual_total_price {
+  @apply text-[1.2rem] font-semibold text-rose-900 max-[395px]:text-[0.93rem];
+}
+
+.cancel_btn {
+  @apply hidden;
+}
+
+.ok_btn_cart {
+  @apply hidden;
+}
+
+.hr {
+  @apply mb-5 mt-4;
+}
+
+.order_total_container {
+  @apply flex items-center justify-between max-[320px]:block;
+}
+
+.order_total_title {
+  @apply block text-rose-500 min-[282px]:text-[0.875rem];
+}
+
+.order_total_sum {
+  @apply text-[1.7rem] font-bold text-rose-900 max-[320px]:text-[1.3rem];
+}
+
+.body {
+  @apply flex flex-col gap-9;
+}
+
+.name_amount_price_container {
+  @apply flex flex-auto flex-col gap-1;
+}
+
+.start_new_order_btn {
+  @apply m-0 py-6 text-[1.1rem] hover:bg-hover !important;
+}
