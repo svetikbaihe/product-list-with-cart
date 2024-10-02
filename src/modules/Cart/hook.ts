@@ -19,7 +19,7 @@ const useContainer = () => {
 
   const handleDeleteProduct = useCallback((id: number) => () => {
     context.deleteProduct(id)
-  }, [cart])
+  }, [])
 
   const cartTotalPrice = useMemo(() => {
     return cart

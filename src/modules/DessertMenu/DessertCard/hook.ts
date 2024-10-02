@@ -12,16 +12,16 @@ const useContainer = (item: ProductType) => {
 
   const handleIncrement = useCallback(() => {
     context.incrementProduct({ id: item?.id })
-  }, [cart])
+  }, [])
 
   const handleDecrement = useCallback(() => {
     context.decrementProduct({ id: item?.id })
     context.deleteZeroAmount()
-  }, [cart])
+  }, [])
 
   const handleAddProductToCart = useCallback(() => {
     context.addProductToCart(item)
-  }, [cart])
+  }, [])
 
   return {
     productAmount,
