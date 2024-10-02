@@ -1,0 +1,91 @@
+.cart {
+  @apply min-w-[240px];
+}
+
+.title {
+  @apply my-5 text-[1.5rem] font-bold text-error !important;
+}
+
+.li_product_position {
+  @apply my-4 flex flex-col;
+}
+
+.price_quantity {
+  @apply mb-5 mt-1.5;
+}
+
+.product_quantity {
+  @apply mr-3 font-semibold text-error;
+}
+
+.product_price {
+  @apply mr-2 text-rose-300;
+}
+
+.product_name {
+  @apply font-semibold;
+}
+
+.individual_total_price {
+  @apply font-semibold text-rose-500;
+}
+
+.order_total_sum_container {
+  @apply flex items-center justify-between max-[320px]:block;
+}
+
+.order_total_title {
+  @apply block text-rose-500;
+}
+
+.order_total_sum {
+  @apply text-[1.7rem] font-bold text-rose-900 max-[320px]:text-[1.3rem];
+}
+
+.cart_info_block {
+  @apply flex items-center justify-between;
+}
+
+.product_delete_icon {
+  @apply text-[1.3rem] text-rose-300 hover:text-rose-900 !important;
+}
+
+.product_delete_btn {
+  @apply mb-5 hover:bg-transparent !important;
+}
+
+.carbon_neutral_container {
+  @apply my-6 flex justify-center rounded-lg bg-rose-100 p-4;
+}
+
+.carbon_accent_text {
+  @apply font-bold text-rose-900;
+}
+
+.carbon_img {
+  @apply mr-3;
+}
+
+.cancel_btn {
+  @apply hidden;
+}
+
+.submit_btn {
+  @apply m-0 w-full py-6 text-[1.1rem] hover:bg-hover !important;
+}
+
+.ok_btn_cart {
+  @apply hidden;
+}
+
+.ok_btn_empty_cart {
+  @apply hidden;
+}
+
+.empty_cart {
+  @apply flex flex-col items-center;
+}
+
+.empty_cart_text {
+  @apply font-semibold text-rose-500;
+}

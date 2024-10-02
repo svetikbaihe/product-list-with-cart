@@ -1,7 +1,23 @@
+.desserts_container {
+  @apply m-6 *:min-w-[15rem];
+}
+
+.card_container {
+  @apply max-w-screen-lg sm:flex sm:flex-wrap sm:gap-8 *:sm:flex-1;
+}
+
 .dessert_menu_title {
-  @apply mb-7 font-bold !important;
+  @apply mb-7 font-bold max-[365px]:text-[1.625rem] !important;
+}
+
+.dessert_menu_title_container {
+  @apply w-full max-w-screen-lg;
 }
 
 .button_cart {
-  @apply active:border-error active:text-error !important;
+  @apply mb-7 active:border-error active:text-error !important;
+}
+
+.button_wrapper {
+  @apply flex gap-[0.375rem];
 }
