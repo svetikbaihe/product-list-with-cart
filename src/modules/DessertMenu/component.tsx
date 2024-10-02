@@ -28,9 +28,12 @@ const DessertMenu: React.FC = () => {
         className={styles.dessertMenuTitleContainer}
       >
         <Title className={styles.dessertMenuTitle}>Desserts</Title>
+
         <div className={styles.buttonWrapper}>
           <Button icon={<AppstoreOutlined />} />
+
           <Button icon={<UnorderedListOutlined />} />
+
           <Button
             icon={<ShoppingCartOutlined />}
             className={styles.buttonCart}
@@ -38,6 +41,7 @@ const DessertMenu: React.FC = () => {
           />
         </div>
       </Flex>
+
       <div className={styles.cardContainer}>
         {items.map(item => (
           <DessertCard item={item} key={item.id} />

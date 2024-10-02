@@ -1,4 +1,4 @@
-import { useContext, useMemo } from 'react'
+import { useCallback, useContext, useMemo } from 'react'
 import { Context } from '@state/context/ContextProvider'
 
 const useContainer = () => {
@@ -6,20 +6,20 @@ const useContainer = () => {
 
   const cart = context.state.cart
 
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     context.closeModal()
-  }
+  }, [])
 
-  const handleOpenModal = () => {
+  const handleOpenModal = useCallback(() => {
     context.openModal({
       type: 'ORDER_MODAL',
       modalProps: null,
     })
-  }
+  }, [])
 
-  const handleDeleteProduct = (id: number) => () => {
+  const handleDeleteProduct = useCallback((id: number) => () => {
     context.deleteProduct(id)
-  }
+  }, [cart])
 
   const cartTotalPrice = useMemo(() => {
     return cart

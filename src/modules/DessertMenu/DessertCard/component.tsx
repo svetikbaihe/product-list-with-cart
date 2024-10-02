@@ -8,34 +8,18 @@ import {
 import { DessertCardProps } from '../types'
 import cn from 'classnames'
 import styles from './styles.module.scss'
-import useContainer from '../hook'
+import useContainer from './hook'
 
 const { Title, Text } = Typography
 
 const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
   const {
-    cart,
+    productAmount,
+
     handleDecrement,
     handleIncrement,
     handleAddProductToCart,
-    handleDeleteZeroAmount,
-  } = useContainer()
-  const foundProduct = cart.find(product => product.id === item.id)
-
-  const productAmount = foundProduct ? foundProduct.amount : 0
-
-  const handleAddToCart = () => {
-    handleAddProductToCart(item)
-  }
-
-  const handlePlus = () => {
-    handleIncrement({ id: item.id })
-  }
-
-  const handleMinus = () => {
-    handleDecrement({ id: item.id })
-    handleDeleteZeroAmount()
-  }
+  } = useContainer(item)
 
   const classNameActiveCover = cn({
     [styles.cardCoverActive]: productAmount >= 1,
@@ -43,14 +27,13 @@ const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
 
   return (
     <Card
-      cover={<picture>
-        <source media="(min-width: 1024px)" srcSet={item.image.desktop} />
-        <source media="(min-width: 640px)" srcSet={item.image.tablet} />
-        <img
-          alt={item.image.alt}
-          src={item.image.mobile}
-        />
-      </picture>}
+      cover={
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={item.image.desktop} />
+          <source media="(min-width: 640px)" srcSet={item.image.tablet} />
+          <img alt={item.image.alt} src={item.image.mobile} />
+        </picture>
+      }
       className={styles.card}
       classNames={{
         body: styles.cardBody,
@@ -61,7 +44,7 @@ const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
         <Button
           icon={<ShoppingCartOutlined className={styles.iconCart} />}
           className={cn(styles.absolutePosition, styles.buttonAddProducts)}
-          onClick={handleAddToCart}
+          onClick={handleAddProductToCart}
         >
           Add to Cart
         </Button>
@@ -74,7 +57,7 @@ const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
           <Button
             icon={<MinusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
             shape="circle"
-            onClick={handleMinus}
+            onClick={handleDecrement}
             className={styles.buttonMinusAndPlus}
           />
 
@@ -83,7 +66,7 @@ const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
           <Button
             icon={<PlusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
             shape="circle"
-            onClick={handlePlus}
+            onClick={handleIncrement}
             className={styles.buttonMinusAndPlus}
           />
         </div>

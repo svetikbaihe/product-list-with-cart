@@ -1,1 +1,1 @@
-export const MOBILE_QUERY = '(min-width: 375px)';
+export const MOBILE_QUERY = '(min-width: 375px)'

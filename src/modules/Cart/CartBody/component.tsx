@@ -11,37 +11,40 @@ const CartBody: React.FC = () => {
 
   return (
     <ul>
-      {cart.map(product => {
-        return (
-          <li key={product.id} className={styles.liProductPosition}>
-            <div className={styles.cartInfoBlock}>
-              <div>
-                <Text className={styles.productName}>{product.name}</Text>
-                <div className={styles.priceQuantity}>
-                  <Text className={styles.productQuantity}>
-                    {product.amount + 'x'}
-                  </Text>
-                  <Text className={styles.productPrice}>
-                    {'@ ' + '$' + product.price.toFixed(2)}
-                  </Text>
-                  <Text className={styles.individualTotalPrice}>
-                    {'$' + (product.amount * product.price).toFixed(2)}
-                  </Text>
-                </div>
+      {cart.map(product => (
+        <li key={product.id} className={styles.liProductPosition}>
+          <div className={styles.cartInfoBlock}>
+            <div>
+              <Text className={styles.productName}>{product.name}</Text>
+
+              <div className={styles.priceQuantity}>
+                <Text className={styles.productQuantity}>
+                  {product.amount + 'x'}
+                </Text>
+
+                <Text className={styles.productPrice}>
+                  {'@ ' + '$' + product.price.toFixed(2)}
+                </Text>
+
+                <Text className={styles.individualTotalPrice}>
+                  {'$' + (product.amount * product.price).toFixed(2)}
+                </Text>
               </div>
-              <Button
-                type="text"
-                icon={
-                  <CloseCircleOutlined className={styles.productDeleteIcon} />
-                }
-                onClick={handleDeleteProduct(product.id)}
-                className={styles.productDeleteBtn}
-              />
             </div>
-            <hr />
-          </li>
-        )
-      })}
+
+            <Button
+              type="text"
+              icon={
+                <CloseCircleOutlined className={styles.productDeleteIcon} />
+              }
+              onClick={handleDeleteProduct(product.id)}
+              className={styles.productDeleteBtn}
+            />
+          </div>
+
+          <hr />
+        </li>
+      ))}
     </ul>
   )
 }

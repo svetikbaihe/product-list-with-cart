@@ -1,4 +1,4 @@
-import { useContext, useMemo } from 'react'
+import { useCallback, useContext, useMemo } from 'react'
 import { Context } from '@state/context/ContextProvider'
 
 const useContainer = () => {
@@ -6,20 +6,13 @@ const useContainer = () => {
 
   const cart = context.state.cart
 
-  const handleOpenModal = () => {
-    context.openModal({
-      type: 'CART_MODAL',
-      modalProps: null,
-    })
-  }
-
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     context.closeModal()
-  }
+  }, [])
 
-  const resetCart = () => {
+  const resetCart = useCallback(() => {
     context.resetCart()
-  }
+  }, [])
 
   const orderTotalPrice = useMemo(() => {
     return cart
@@ -29,16 +22,15 @@ const useContainer = () => {
 
   const truncateString = (str: string, length: number): string => {
     return str.length > length ? str.slice(0, length) + '...' : str
-  }
+  } 
 
   return {
     cart,
     orderTotalPrice,
-    
-    handleOpenModal,
+
     handleCloseModal,
     resetCart,
-    truncateString
+    truncateString,
   }
 }
 
