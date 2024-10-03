@@ -10,6 +10,8 @@ export enum ACTION_TYPES {
   DELETE_PRODUCT = 'DELETE_PRODUCT',
   DELETE_ZERO_AMOUNT = 'DELETE_ZERO_AMOUNT',
   RESET_CART = 'RESET_CART',
+  SWITCH_TO_LIST = 'SWITCH_TO_LIST',
+  SWITCH_TO_GRID = 'SWITCH_TO_GRID',
 }
 
 export interface CartProduct extends ProductType {
@@ -24,6 +26,7 @@ export interface Modal {
 export interface State {
   cart: CartProduct[]
   modal: Modal
+  isList: Boolean
 }
 
 export interface ActionItem<T, P> {
@@ -40,3 +43,5 @@ export type Action =
   | ActionItem<ACTION_TYPES.DELETE_PRODUCT, number>
   | ActionItem<ACTION_TYPES.DELETE_ZERO_AMOUNT, undefined>
   | ActionItem<ACTION_TYPES.RESET_CART, undefined>
+  | ActionItem<ACTION_TYPES.SWITCH_TO_LIST, undefined>
+  | ActionItem<ACTION_TYPES.SWITCH_TO_GRID, undefined>

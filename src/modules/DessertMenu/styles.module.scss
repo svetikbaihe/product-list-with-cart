@@ -2,8 +2,12 @@
   @apply m-6 *:min-w-[15rem];
 }
 
-.card_container {
+.card_container_grid {
   @apply max-w-screen-lg sm:flex sm:flex-wrap sm:gap-8 *:sm:flex-1;
+}
+
+.card_container_list {
+  @apply flex w-full flex-col gap-5;
 }
 
 .dessert_menu_title {
@@ -14,8 +18,12 @@
   @apply w-full max-w-screen-lg;
 }
 
-.button_cart {
+.button_menu {
   @apply mb-7 active:border-error active:text-error !important;
+}
+
+.button_menu--focused {
+  @apply border-error text-error;
 }
 
 .button_wrapper {

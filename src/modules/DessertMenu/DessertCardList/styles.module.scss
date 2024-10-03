@@ -1,0 +1,56 @@
+.card {
+  @apply flex min-w-60 items-center rounded-t-lg;
+}
+
+.card_title {
+  @apply m-0 !important;
+}
+
+.card_info_wrapper {
+  @apply flex flex-auto items-center justify-around max-[400px]:flex-col max-[400px]:items-stretch;
+  @apply max-[400px]:justify-center;
+}
+
+.card_cover {
+  img {
+    @apply rounded-lg !important;
+  }
+}
+
+.card_cover_active {
+  img {
+    @apply rounded-lg outline outline-[2.5px] outline-error !important;
+  }
+}
+
+.card_body {
+  @apply flex flex-1 items-center rounded-lg !important;
+}
+
+.card_category {
+  @apply font-normal text-rose-400 max-[500px]:hidden !important;
+}
+
+.button_add_products {
+  @apply font-semibold text-rose-900 active:border-error active:text-error !important;
+}
+
+.div_add_remove_products {
+  @apply flex items-center justify-between rounded-full max-[330px]:flex-col;
+}
+
+.counter {
+  @apply text-xs;
+}
+
+.button_minus_and_plus {
+  @apply border-none;
+}
+
+.card_price {
+  @apply text-base font-semibold text-error;
+}
+
+.icon_cart {
+  @apply text-error;
+}
