@@ -27,7 +27,7 @@ const ConfirmedOrder: React.FC = () => {
       className={styles.order}
     >
       <OrderBody />
-      
+
       <OrderFooter />
     </Modal>
   )

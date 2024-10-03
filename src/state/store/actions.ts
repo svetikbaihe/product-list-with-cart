@@ -45,3 +45,13 @@ export const resetCart = (): Action => ({
   type: ACTION_TYPES.RESET_CART,
   payload: undefined,
 })
+
+export const switchToList = (): Action => ({
+  type: ACTION_TYPES.SWITCH_TO_LIST,
+  payload: undefined,
+})
+
+export const switchToGrid = (): Action => ({
+  type: ACTION_TYPES.SWITCH_TO_GRID,
+  payload: undefined,
+})

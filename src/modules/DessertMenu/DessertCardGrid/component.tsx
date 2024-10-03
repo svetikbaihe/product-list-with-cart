@@ -1,4 +1,6 @@
 import React from 'react'
+import cn from 'classnames'
+import useContainer from './hook'
 import { Card, Typography, Button } from 'antd'
 import {
   ShoppingCartOutlined,
@@ -6,13 +8,11 @@ import {
   MinusCircleTwoTone,
 } from '@ant-design/icons'
 import { DessertCardProps } from '../types'
-import cn from 'classnames'
 import styles from './styles.module.scss'
-import useContainer from './hook'
 
 const { Title, Text } = Typography
 
-const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
+const DessertCardGrid: React.FC<DessertCardProps> = ({ item }) => {
   const {
     productAmount,
 
@@ -82,4 +82,4 @@ const DessertCard: React.FC<DessertCardProps> = ({ item }) => {
   )
 }
 
-export default DessertCard
+export default DessertCardGrid

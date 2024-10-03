@@ -13,6 +13,8 @@ export interface ContextProps {
   deleteProduct: (id: number) => void
   deleteZeroAmount: VoidFunction
   resetCart: VoidFunction
+  switchToList: VoidFunction
+  switchToGrid: VoidFunction
   state: State
 }
 
@@ -25,12 +27,16 @@ export const Context = createContext<ContextProps>({
   addProductToCart: () => {},
   deleteZeroAmount: () => {},
   resetCart: () => {},
+  switchToGrid: () => {},
+  switchToList: () => {},
+
   state: {
     cart: [],
     modal: {
       type: null,
       modalProps: null,
     },
+    isList: false,
   },
 })
 
@@ -41,6 +47,7 @@ const ContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
       type: null,
       modalProps: null,
     },
+    isList: false,
   }
 
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -77,6 +84,14 @@ const ContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
     dispatch(actions.resetCart())
   }
 
+  const switchToList = () => {
+    dispatch(actions.switchToList())
+  }
+
+  const switchToGrid = () => {
+    dispatch(actions.switchToGrid())
+  }
+
   const store = {
     state,
 
@@ -88,6 +103,8 @@ const ContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
     addProductToCart,
     deleteZeroAmount,
     resetCart,
+    switchToGrid,
+    switchToList,
   }
 
   return <Context.Provider value={store}>{children}</Context.Provider>

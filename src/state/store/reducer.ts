@@ -60,6 +60,16 @@ export const reducer = (state: State, action: Action): State => {
           modalProps: null,
         },
       }
+    case ACTION_TYPES.SWITCH_TO_LIST:
+      return {
+        ...state,
+        isList: true,
+      }
+    case ACTION_TYPES.SWITCH_TO_GRID:
+      return {
+        ...state,
+        isList: false,
+      }
     default:
       return state
   }

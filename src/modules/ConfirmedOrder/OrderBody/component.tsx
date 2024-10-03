@@ -1,7 +1,7 @@
 import React from 'react'
 import useContainer from '../hook'
 import { Typography } from 'antd'
-import { MOBILE_QUERY } from '@constants/app'
+import { MOBILE_M_QUERY } from '@constants/app'
 import { useMediaQuery } from 'react-responsive'
 import styles from '../styles.module.scss'
 
@@ -10,14 +10,14 @@ const { Text } = Typography
 const OrderBody: React.FC = () => {
   const { cart, orderTotalPrice, truncateString } = useContainer()
 
-  const isMobile = useMediaQuery({ query: MOBILE_QUERY })
+  const isMobileM = useMediaQuery({ query: MOBILE_M_QUERY })
 
   return (
     <div className={styles.productList}>
       <ul>
         {cart.map(product => (
           <li key={product.id} className={styles.liProduct}>
-            {isMobile && (
+            {isMobileM && (
               <img
                 src={product.image.thumbnail}
                 className={styles.orderProductImg}
@@ -26,7 +26,7 @@ const OrderBody: React.FC = () => {
 
             <div className={styles.nameAmountPriceContainer}>
               <Text className={styles.productName}>
-                {isMobile
+                {isMobileM
                   ? truncateString(product.name, 10)
                   : truncateString(product.name, 20)}
               </Text>

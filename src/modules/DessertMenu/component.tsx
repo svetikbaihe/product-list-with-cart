@@ -1,5 +1,7 @@
 import React from 'react'
-import DessertCard from './DessertCard'
+import cn from 'classnames'
+import DessertCardList from './DessertCardList'
+import DessertCardGrid from './DessertCardGrid'
 import { Flex, Typography, Button } from 'antd'
 import {
   ShoppingCartOutlined,
@@ -13,7 +15,12 @@ import styles from './styles.module.scss'
 const { Title } = Typography
 
 const DessertMenu: React.FC = () => {
-  const { handleOpenModal } = useContainer()
+  const { isList, handleOpenModal, handleSwitchGrid, handleSwitchList } =
+    useContainer()
+
+  const classNameSwitchToList = cn({
+    [styles.cardContainerList]: isList,
+  })
 
   return (
     <Flex
@@ -30,22 +37,38 @@ const DessertMenu: React.FC = () => {
         <Title className={styles.dessertMenuTitle}>Desserts</Title>
 
         <div className={styles.buttonWrapper}>
-          <Button icon={<AppstoreOutlined />} />
+          <Button
+            icon={<AppstoreOutlined />}
+            onClick={handleSwitchGrid}
+            className={cn(styles.buttonMenu, {
+              [styles.buttonMenuFocused]: !isList,
+            })}
+          />
 
-          <Button icon={<UnorderedListOutlined />} />
+          <Button
+            icon={<UnorderedListOutlined />}
+            onClick={handleSwitchList}
+            className={cn(styles.buttonMenu, {
+              [styles.buttonMenuFocused]: isList,
+            })}
+          />
 
           <Button
             icon={<ShoppingCartOutlined />}
-            className={styles.buttonCart}
+            className={styles.buttonMenu}
             onClick={handleOpenModal}
           />
         </div>
       </Flex>
 
-      <div className={styles.cardContainer}>
-        {items.map(item => (
-          <DessertCard item={item} key={item.id} />
-        ))}
+      <div className={cn(styles.cardContainerGrid, classNameSwitchToList)}>
+        {items.map(item =>
+          isList ? (
+            <DessertCardList item={item} key={item.id} />
+          ) : (
+            <DessertCardGrid item={item} key={item.id} />
+          )
+        )}
       </div>
     </Flex>
   )

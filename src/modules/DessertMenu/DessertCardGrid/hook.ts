@@ -25,7 +25,7 @@ const useContainer = (item: ProductType) => {
 
   return {
     productAmount,
-    
+
     handleDecrement,
     handleIncrement,
     handleAddProductToCart,

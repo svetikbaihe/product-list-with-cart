@@ -12,7 +12,7 @@ const OrderHeader: React.FC = () => {
       <Title level={1} className={styles.titleOrder}>
         Order Confirmed
       </Title>
-      
+
       <Text className={styles.textOrder}>We hope you enjoy your food!</Text>
     </>
   )
