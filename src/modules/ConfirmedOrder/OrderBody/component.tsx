@@ -13,8 +13,8 @@ const OrderBody: React.FC = () => {
   const isMobileM = useMediaQuery({ query: MOBILE_M_QUERY })
 
   return (
-    <div className={styles.productList}>
-      <ul>
+    <div className={styles.orderModal}>
+      <ul className={styles.productList}>
         {cart.map(product => (
           <li key={product.id} className={styles.liProduct}>
             {isMobileM && (
@@ -45,11 +45,11 @@ const OrderBody: React.FC = () => {
             <Text className={styles.individualTotalPrice}>
               {'$' + (product.amount * product.price).toFixed(2)}
             </Text>
-
-            <hr className={styles.hr} />
           </li>
         ))}
       </ul>
+
+      <hr />
 
       <div className={styles.orderTotalContainer}>
         <Text className={styles.orderTotalTitle}>Order Total</Text>

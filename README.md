@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/svetikbaihe/product-list-with-cart.git)
-- Live Site URL: [Vercel](https://to-be-deployed-soon)
+- Live Site URL: [Vercel](https://product-list-with-cart-azure.vercel.app/)
 
 ## My process
 
