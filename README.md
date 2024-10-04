@@ -1,6 +1,9 @@
 # Frontend Mentor - Product list with cart solution
 
-This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the
+[Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d).
+Frontend Mentor challenges help you improve your coding skills by building
+realistic projects.
 
 ## Table of contents
 
@@ -26,22 +29,24 @@ Users should be able to:
 - Increase/decrease the number of items in the cart
 - See an order confirmation modal when they click "Confirm Order"
 - Reset their selections when they click "Start New Order"
-- View the optimal layout for the interface depending on their device's screen size
+- View the optimal layout for the interface depending on their device's screen
+  size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![](/images/screenshots/grid_laptop.png)
-![](/images/screenshots/grid_mobile.png)
-![](/images/screenshots/list_laptop.png)
-![](/images/screenshots/grid_mobile.png)
-![](/images/screenshots/empty_cart.png)
-![](/images/screenshots/cart.png)
-![](/images/screenshots/order_confirmed.png)
+![Grid-desktop](public/images/screenshots/grid_desktop.png)
+![Grid-mobile](public/images/screenshots/grid_mobile.png)
+![List-desktop](public/images/screenshots/list_desktop.png)
+![List-mobile](public/images/screenshots/list_mobile.png)
+![Empty cart](public/images/screenshots/empty_cart.png)
+![Cart](public/images/screenshots/cart.png)
+![Order confirmed](public/images/screenshots/order_confirmed.png)
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/svetikbaihe/product-list-with-cart.git)
+- Solution URL:
+  [GitHub](https://github.com/svetikbaihe/product-list-with-cart.git)
 - Live Site URL: [Vercel](https://product-list-with-cart-azure.vercel.app/)
 
 ## My process
@@ -61,24 +66,40 @@ Users should be able to:
 
 ### What I learned
 
-First of all, I would like to talk about the new things I have learned throughout this project. I used the Ant Design UI framework for the first time, and I can say that it was not easy. As with any other new framework, library, or feature, working efficiently with Ant Design requires time and patience. I am 100% sure that I missed something with the theme. Also, customizing components was a great challenge as well.
+First of all, I would like to talk about the new things I have learned
+throughout this project. I used the Ant Design UI framework for the first time,
+and I can say that it was not easy. As with any other new framework, library, or
+feature, working efficiently with Ant Design requires time and patience. I am
+100% sure that I missed something with the theme. Also, customizing components
+was a great challenge as well.
 
-This is my second React project, and I am still learning how to use it. In this project, I incorporated different hooks such as useMemo, useCallback, and useReducer alongside useContext.
+This is my second React project, and I am still learning how to use it. In this
+project, I incorporated different hooks such as useMemo, useCallback, and
+useReducer alongside useContext.
 
-I added some additional features that were not originally described in the challenge. If you look at the screenshots, you can see that I added a 'list-grid switcher', moved the cart and the empty cart component into separate modals, and the design overall slightly differs from the original one. On top of that, I am planning to expand this project a little by adding routing and some pages just to practice react-router.
+I added some additional features that were not originally described in the
+challenge. If you look at the screenshots, you can see that I added a 'list-grid
+switcher', moved the cart and the empty cart component into separate modals, and
+the design overall slightly differs from the original one. On top of that, I am
+planning to expand this project a little by adding routing and some pages just
+to practice react-router.
 
 ### Continued development
 
-There is still a lot of work to be done with hooks, Ant Design concepts, and React itself. Oh, and I still have some issues with ESLint. I must admit that setting up the project from scratch is truly a distinct form of art.
+There is still a lot of work to be done with hooks, Ant Design concepts, and
+React itself. Oh, and I still have some issues with ESLint. I must admit that
+setting up the project from scratch is truly a distinct form of art.
 
 ### Useful resources
 
-- [React](https://react.dev/) - Everyone who learns React should peruse this documentation.
+- [React](https://react.dev/) - Everyone who learns React should peruse this
+  documentation.
 
 ## Author
 
-- Frontend Mentor - [@svetikbaihe](https://www.frontendmentor.io/profile/svetikbaihe)
+- Frontend Mentor -
+  [@svetikbaihe](https://www.frontendmentor.io/profile/svetikbaihe)
 
 ## Acknowledgments
 
-- Kudos to my mentor - [@ArtemPapusha](https://github.com/ArtemPapusha) 
+- Kudos to my mentor - [@ArtemPapusha](https://github.com/ArtemPapusha)
