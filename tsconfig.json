@@ -54,11 +54,14 @@
       "@mock": ["./mock"],
       "@mock/*": ["./mock/*"],
 
-      "@router": ["src/router"],
-      "@router/*": ["src/router/*"],
+      "@router": ["./router"],
+      "@router/*": ["./router/*"],
 
-      "@assets": ["src/assets"],
-      "@assets/*": ["src/assets/*"]
+      "@assets": ["./assets"],
+      "@assets/*": ["./assets/*"],
+
+      "@app": ["./app"],
+      "@app/*": ["./app/*"]
     }
   },
   "homepage": ".",

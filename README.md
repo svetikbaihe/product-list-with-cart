@@ -35,13 +35,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Grid-desktop](public/images/screenshots/grid_desktop.png)
-![Grid-mobile](public/images/screenshots/grid_mobile.png)
-![List-desktop](public/images/screenshots/list_desktop.png)
-![List-mobile](public/images/screenshots/list_mobile.png)
-![Empty cart](public/images/screenshots/empty_cart.png)
-![Cart](public/images/screenshots/cart.png)
-![Order confirmed](public/images/screenshots/order_confirmed.png)
+![Desktop-grid](public/images/screenshots/desktop_grid.png)
+![Desktop-list](public/images/screenshots/desktop_list.png)
+![Desktop-empty-cart](public/images/screenshots/desktop_empty-cart.png)
+![Desktop-cart](public/images/screenshots/desktop_cart.png)
+![Desktop-order-confirmed](public/images/screenshots/desktop_order-confirmed.png)
+![Mobile-grid-list](public/images/screenshots/mobile_grid-list.png)
 
 ### Links
 
@@ -53,10 +52,11 @@ Users should be able to:
 
 ### Built with
 
+- HTML markup
 - Typescript
 - React
 - React-Responsive
-- Sass
+- SCSS/SASS
 - Tailwind
 - Ant Design
 - Flexbox

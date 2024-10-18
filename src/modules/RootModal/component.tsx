@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '@state/context/ContextProvider'
+import { Context } from '@app/providers/context/ContextProvider'
 import modals from './modals'
 
 const RootModal: React.FC = () => {

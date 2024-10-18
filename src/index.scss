@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/fonts/RedHatText-Regular.ttf) format('truetype');
+    src: url(/fonts/RedHatText-Regular.ttf) format('truetype')
   }
 
   @font-face {
@@ -30,7 +30,9 @@
 
 @layer base {
   html,
-  body {
+  body, 
+  #root {
     font-family: 'RedHatText', sans-serif;
+    height: 100%;
   }
 }

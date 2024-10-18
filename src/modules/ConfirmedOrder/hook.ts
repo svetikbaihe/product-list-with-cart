@@ -1,5 +1,5 @@
 import { useCallback, useContext, useMemo } from 'react'
-import { Context } from '@state/context/ContextProvider'
+import { Context } from '@app/providers/context/ContextProvider'
 
 const useContainer = () => {
   const context = useContext(Context)

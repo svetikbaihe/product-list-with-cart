@@ -1,0 +1,12 @@
+.parallax_1 {
+  @apply h-full bg-[url('/images/home/haloween_desserts.png')] bg-cover bg-fixed bg-center bg-no-repeat;
+}
+
+.parallax_2 {
+  @apply h-full bg-[url('/images/home/pumpkins.png')] bg-cover bg-fixed bg-center bg-no-repeat;
+}
+
+.home_text {
+  @apply min-h-[7rem] bg-[url('/images/home/ghosts.png')] pt-12 text-center text-xl font-semibold sm:min-h-40 sm:pt-16;
+}
+

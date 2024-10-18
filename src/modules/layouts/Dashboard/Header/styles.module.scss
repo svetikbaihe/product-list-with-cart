@@ -1,0 +1,15 @@
+.dashboard_header {
+  @apply fixed top-0 z-10 flex max-h-28 w-full items-center justify-between bg-red-100 py-9 pl-5 pr-2 md:pl-10;
+}
+
+.dashboard_header_title {
+  @apply m-0 text-2xl md:text-4xl !important;
+}
+
+.dashboard_header_nav {
+  @apply flex flex-col min-[550px]:flex-row md:gap-6;
+}
+
+.button {
+  @apply text-[0.81rem] active:border-none min-[425px]:text-lg !important;
+}

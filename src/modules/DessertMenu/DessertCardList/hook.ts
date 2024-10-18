@@ -1,5 +1,5 @@
 import { useCallback, useContext } from 'react'
-import { Context } from '@state/context/ContextProvider'
+import { Context } from '@app/providers/context/ContextProvider'
 import { ProductType } from 'type/app'
 
 const useContainer = (item: ProductType) => {

@@ -23,6 +23,7 @@ export default defineConfig({
             "@mock": path.resolve("src/mock"),
             "@router": path.resolve("src/router"),
             "@assets": path.resolve("src/assets"),
+            "@app": path.resolve("src/app"),
         },
     },
 });

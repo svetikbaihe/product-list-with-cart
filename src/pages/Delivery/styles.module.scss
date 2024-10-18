@@ -1,0 +1,19 @@
+.delivery_wrapper {
+  @apply mt-[8.7rem] h-full;
+}
+
+.delivery_text {
+  @apply m-auto max-w-80 text-center text-lg;
+
+  p {
+    @apply text-base sm:text-lg;
+  }
+}
+
+.delivery_img {
+  @apply h-full bg-[url('/images/delivery/delivery.png')] bg-contain bg-no-repeat opacity-25;
+}
+
+.phone_text {
+  @apply font-bold;
+}
