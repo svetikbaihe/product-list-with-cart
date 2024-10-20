@@ -17,3 +17,7 @@
 .phone_text {
   @apply font-bold;
 }
+
+.delivery_links {
+  @apply underline font-bold hover:text-red-400 active:text-red-300 focus:text-green-700;
+}

@@ -3,6 +3,8 @@ export enum RoutesKeys {
   HOME = 'HOME',
   DELIVERY = 'DELIVERY',
   DESSERT_DETAILS = 'DESSERT_DETAILS',
+  DELIVERY_DIRECT = 'DELIVERY_DIRECT',
+  DELIVERY_FREE = 'DELIVERY_FREE'
 }
 
 export enum RoutesPathParams {
@@ -18,6 +20,8 @@ export enum RoutesPath {
   HOME = '/',
   DELIVERY = '/delivery',
   DESSERT_DETAILS = `/desserts/:${RoutesPathParams.DESSERT_ID}`,
+  DELIVERY_DIRECT = '/delivery/direct',
+  DELIVERY_FREE = '/delivery/free'
 }
 
 export const ROUTES = {
@@ -43,5 +47,17 @@ export const ROUTES = {
     KEY: RoutesKeys.DESSERT_DETAILS,
     PATH: RoutesPath[RoutesKeys.DESSERT_DETAILS],
     DISPLAY_NAME: RoutesKeys.DESSERT_DETAILS,
+  },
+
+  [RoutesKeys.DELIVERY_DIRECT]: {
+    KEY: RoutesKeys.DELIVERY_DIRECT,
+    PATH: RoutesPath[RoutesKeys.DELIVERY_DIRECT],
+    DISPLAY_NAME: RoutesKeys.DELIVERY_DIRECT,
+  },
+
+  [RoutesKeys.DELIVERY_FREE]: {
+    KEY: RoutesKeys.DELIVERY_FREE,
+    PATH: RoutesPath[RoutesKeys.DELIVERY_FREE],
+    DISPLAY_NAME: RoutesKeys.DELIVERY_FREE,
   },
 }

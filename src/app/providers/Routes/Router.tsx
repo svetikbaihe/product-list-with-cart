@@ -35,6 +35,16 @@ const Router = createBrowserRouter([
             path: ROUTES[RoutesKeys.DESSERT_DETAILS].PATH,
             lazy: () => import('@pages/DessertDetails/lazy'),
           },
+          {
+            id: ROUTES[RoutesKeys.DELIVERY_DIRECT].KEY,
+            path: ROUTES[RoutesKeys.DELIVERY_DIRECT].PATH,
+            lazy: () => import('@pages/DeliveryDirect/lazy'),
+          },
+          {
+            id: ROUTES[RoutesKeys.DELIVERY_FREE].KEY,
+            path: ROUTES[RoutesKeys.DELIVERY_FREE].PATH,
+            lazy: () => import('@pages/DeliveryFree/lazy'),
+          },
         ],
       },
     ],

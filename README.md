@@ -9,7 +9,8 @@ realistic projects.
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots for the main FM challenge](#screenshots-for-the-main-fm-challenge)
+  - [Screenshots for additional tasks](#screenshots-for-additional-tasks)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -33,7 +34,7 @@ Users should be able to:
   size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshots
+### Screenshots for the main FM challenge
 
 ![Desktop-grid](public/images/screenshots/desktop_grid.png)
 ![Desktop-list](public/images/screenshots/desktop_list.png)
@@ -41,6 +42,11 @@ Users should be able to:
 ![Desktop-cart](public/images/screenshots/desktop_cart.png)
 ![Desktop-order-confirmed](public/images/screenshots/desktop_order-confirmed.png)
 ![Mobile-grid-list](public/images/screenshots/mobile_grid-list.png)
+
+### Screenshots for additional tasks
+
+![Desktop-additional](public/images/screenshots/desktop_additional.png)
+![Mobile-additional](public/images/screenshots/mobile_additional.png)
 
 ### Links
 
@@ -56,6 +62,7 @@ Users should be able to:
 - Typescript
 - React
 - React-Responsive
+- React Router
 - SCSS/SASS
 - Tailwind
 - Ant Design

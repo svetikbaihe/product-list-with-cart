@@ -1,0 +1,11 @@
+.info_btn_wrapper {
+  @apply mt-36;
+}
+
+.back_btn {
+  @apply ml-5 mt-4 flex items-center gap-2;
+}
+
+.description_wrapper {
+  @apply mx-auto max-w-[38rem] text-center text-2xl;
+}
