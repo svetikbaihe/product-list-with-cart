@@ -1,4 +1,4 @@
-import { RoutesPathParams } from "@constants/routes"
+import { RoutesPathParams } from '@constants/routes'
 
 export type RouterParams = {
   [K in RoutesPathParams]?: string | null | undefined

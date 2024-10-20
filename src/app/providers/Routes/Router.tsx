@@ -33,8 +33,8 @@ const Router = createBrowserRouter([
           {
             id: ROUTES[RoutesKeys.DESSERT_DETAILS].KEY,
             path: ROUTES[RoutesKeys.DESSERT_DETAILS].PATH,
-            lazy: () => import('@pages/DessertDetails/lazy')
-          }
+            lazy: () => import('@pages/DessertDetails/lazy'),
+          },
         ],
       },
     ],

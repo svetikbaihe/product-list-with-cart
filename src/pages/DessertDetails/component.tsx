@@ -1,7 +1,6 @@
 import React from 'react'
 import { ROUTES, RoutesKeys } from '@constants/routes'
 import DessertDetails from '@modules/DessertDetails'
-import styles from './styles.module.scss'
 
 const DessertDetailsPage: React.FC = () => {
   return <DessertDetails />

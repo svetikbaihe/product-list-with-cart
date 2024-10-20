@@ -14,10 +14,10 @@ export const items = [
       'almonds',
       'mixed berries',
       'icing sugar',
-      'maple syrup'
+      'maple syrup',
     ],
     price: 6.5,
-    id: "1",
+    id: '1',
   },
   {
     image: {
@@ -34,10 +34,10 @@ export const items = [
       'almonds',
       'mixed berries',
       'icing sugar',
-      'maple syrup'
+      'maple syrup',
     ],
     price: 7.0,
-    id: "2",
+    id: '2',
   },
   {
     image: {
@@ -54,10 +54,10 @@ export const items = [
       'almonds',
       'mixed berries',
       'icing sugar',
-      'maple syrup'
+      'maple syrup',
     ],
     price: 8.0,
-    id: "3",
+    id: '3',
   },
   {
     image: {
@@ -69,13 +69,9 @@ export const items = [
     },
     name: 'Classic Tiramisu',
     category: 'Tiramisu',
-    ingredients: [
-      'coffee soaked lady fingers',
-      'mascarpone',
-      'cocoa powder'
-    ],
+    ingredients: ['coffee soaked lady fingers', 'mascarpone', 'cocoa powder'],
     price: 5.5,
-    id: "4",
+    id: '4',
   },
   {
     image: {
@@ -87,13 +83,9 @@ export const items = [
     },
     name: 'Pistachio Baklava',
     category: 'Baklava',
-    ingredients: [
-      'phyllo dough',
-      'pistachio',
-      'syrup'
-    ],
+    ingredients: ['phyllo dough', 'pistachio', 'syrup'],
     price: 4.0,
-    id: "5",
+    id: '5',
   },
   {
     image: {
@@ -105,14 +97,9 @@ export const items = [
     },
     name: 'Lemon Meringue Pie',
     category: 'Pie',
-    ingredients: [
-      'pie crust',
-      'lemon filling',
-      'meringue',
-      'whipped cream'
-    ],
+    ingredients: ['pie crust', 'lemon filling', 'meringue', 'whipped cream'],
     price: 5.0,
-    id: "6",
+    id: '6',
   },
   {
     image: {
@@ -124,13 +111,9 @@ export const items = [
     },
     name: 'Red Velvet Cake',
     category: 'Cake',
-    ingredients: [
-      'sponge cake',
-      'vanilla buttercream',
-      'fresh strawberries'
-    ],
+    ingredients: ['sponge cake', 'vanilla buttercream', 'fresh strawberries'],
     price: 4.5,
-    id: "7",
+    id: '7',
   },
   {
     image: {
@@ -146,10 +129,10 @@ export const items = [
       'brownies',
       'salted caramel',
       '1 scoop of vanilla ice-cream',
-      'chocolate drizzle'
+      'chocolate drizzle',
     ],
     price: 4.5,
-    id: "8",
+    id: '8',
   },
   {
     image: {
@@ -161,12 +144,8 @@ export const items = [
     },
     name: 'Vanilla Panna Cotta',
     category: 'Panna Cotta',
-    ingredients: [
-      'panna cotta',
-      'whipped cream',
-      'mixed berries'
-    ],
+    ingredients: ['panna cotta', 'whipped cream', 'mixed berries'],
     price: 6.5,
-    id: "9",
+    id: '9',
   },
 ]

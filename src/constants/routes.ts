@@ -2,22 +2,22 @@ export enum RoutesKeys {
   DESSERTS = 'DESSERTS',
   HOME = 'HOME',
   DELIVERY = 'DELIVERY',
-  DESSERT_DETAILS = 'DESSERT_DETAILS'
+  DESSERT_DETAILS = 'DESSERT_DETAILS',
 }
 
 export enum RoutesPathParams {
-  DESSERT_ID = 'dessertId'
+  DESSERT_ID = 'dessertId',
 }
 
 export enum QueryKey {
-  DATE = "date",
+  DATE = 'date',
 }
 
 export enum RoutesPath {
   DESSERTS = '/desserts',
   HOME = '/',
   DELIVERY = '/delivery',
-  DESSERT_DETAILS = `/desserts/:${RoutesPathParams.DESSERT_ID}`
+  DESSERT_DETAILS = `/desserts/:${RoutesPathParams.DESSERT_ID}`,
 }
 
 export const ROUTES = {

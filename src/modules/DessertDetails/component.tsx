@@ -1,5 +1,5 @@
 import React from 'react'
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from 'uuid'
 import { Card, Space, Typography } from 'antd'
 import useContainer from './hook'
 import AddToCart from '@modules/AddToCart'
