@@ -82,7 +82,7 @@ was a great challenge as well.
 
 This is my second React project, and I am still learning how to use it. In this
 project, I incorporated different hooks such as useMemo, useCallback, and
-useReducer alongside useContext.
+useReducer alongside useContext and others.
 
 I added some additional features that were not originally described in the
 challenge. If you look at the screenshots, you can see that I added a 'list-grid
@@ -90,6 +90,10 @@ switcher', moved the cart and the empty cart component into separate modals, and
 the design overall slightly differs from the original one. On top of that, I am
 planning to expand this project a little by adding routing and some pages just
 to practice react-router.
+
+**Update**
+
+As I said above, I were going to practice React Router, and I did. I adde several pages to the initial project: Home, Dessert Details, Delivery(with two subpages: Delivery Free and Delivery Direct). This was a big milestone for me as a beginner in React. I learned how to navigate through a website and actively used useMatches and custom hooks as well. As always, there is still a lot things to learn and to do.
 
 ### Continued development
 
