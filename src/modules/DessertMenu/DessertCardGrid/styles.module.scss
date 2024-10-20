@@ -22,30 +22,6 @@
   @apply font-normal text-rose-400 !important;
 }
 
-.absolute_position {
-  @apply absolute left-1/2 top-[-1rem] min-w-[40%] translate-x-[-50%] rounded-full;
-}
-
-.button_add_products {
-  @apply font-semibold text-rose-900 active:border-error active:text-error !important;
-}
-
-.div_add_remove_products {
-  @apply flex items-center justify-between bg-error py-[0.04rem];
-}
-
-.counter {
-  @apply text-xs text-white;
-}
-
-.button_minus_and_plus {
-  @apply border-none bg-transparent p-0;
-}
-
 .card_price {
   @apply text-base font-semibold text-error;
-}
-
-.icon_cart {
-  @apply text-error;
 }

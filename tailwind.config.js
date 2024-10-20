@@ -16,6 +16,9 @@ export default {
         'rose-400': 'hsl(7, 20%, 60%)',
         'rose-500': 'hsl(12, 20%, 44%)',
         'rose-900': 'hsl(14, 65%, 9%)'
+      },
+      screens: {
+        550: '550px'
       }
     },
   },

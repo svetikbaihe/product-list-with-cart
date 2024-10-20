@@ -11,5 +11,5 @@
 }
 
 .button {
-  @apply text-[0.81rem] active:border-none min-[425px]:text-lg !important;
+  @apply hover:text-red-400 focus:text-red-600 active:text-red-600;
 }

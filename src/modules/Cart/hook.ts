@@ -18,7 +18,7 @@ const useContainer = () => {
   }, [])
 
   const handleDeleteProduct = useCallback(
-    (id: number) => () => {
+    (id: string) => () => {
       context.deleteProduct(id)
     },
     []

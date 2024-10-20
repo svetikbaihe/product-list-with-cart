@@ -8,6 +8,7 @@ export interface ProductType {
   }
   name: string
   category: string
+  ingredients: string[]
   price: number
-  id: number
+  id: string
 }

@@ -3,13 +3,11 @@ import cn from 'classnames'
 import useContainer from './hook'
 import { TABLET_QUERY } from '@constants/app'
 import { useMediaQuery } from 'react-responsive'
-import { Card, Typography, Button } from 'antd'
-import {
-  ShoppingCartOutlined,
-  PlusCircleTwoTone,
-  MinusCircleTwoTone,
-} from '@ant-design/icons'
+import { Card, Typography } from 'antd'
 import { DessertCardProps } from '../types'
+import AddToCart from '@modules/AddToCart'
+import { Link } from 'react-router-dom'
+import { RoutesKeys } from '@constants/routes'
 import styles from './styles.module.scss'
 
 const { Title, Text } = Typography
@@ -20,10 +18,8 @@ const DessertCardList: React.FC<DessertCardProps> = ({ item }) => {
   const {
     productAmount,
 
-    handleDecrement,
-    handleIncrement,
-    handleAddProductToCart,
     truncateString,
+    getPathData,
   } = useContainer(item)
 
   const classNameActiveCover = cn({
@@ -33,9 +29,18 @@ const DessertCardList: React.FC<DessertCardProps> = ({ item }) => {
   return (
     <Card
       cover={
-        <picture>
-          <img alt={item.image.alt} src={item.image.thumbnail} />
-        </picture>
+        <Link
+          to={getPathData({
+            pageKey: RoutesKeys.DESSERT_DETAILS,
+            params: {
+              dessertId: item.id,
+            },
+          })}
+        >
+          <picture>
+            <img alt={item.image.alt} src={item.image.thumbnail} />
+          </picture>
+        </Link>
       }
       className={styles.card}
       classNames={{
@@ -55,33 +60,7 @@ const DessertCardList: React.FC<DessertCardProps> = ({ item }) => {
         <Text className={styles.cardPrice}>{'$' + item.price.toFixed(2)}</Text>
       </div>
 
-      {productAmount === 0 && (
-        <Button
-          icon={<ShoppingCartOutlined className={styles.iconCart} />}
-          className={styles.buttonAddProducts}
-          onClick={handleAddProductToCart}
-        ></Button>
-      )}
-
-      {productAmount >= 1 && (
-        <div className={styles.divAddRemoveProducts}>
-          <Button
-            icon={<MinusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
-            shape="circle"
-            onClick={handleDecrement}
-            className={styles.buttonMinusAndPlus}
-          />
-
-          <Text className={styles.counter}>{productAmount}</Text>
-
-          <Button
-            icon={<PlusCircleTwoTone twoToneColor="hsl(14, 86%, 42%)" />}
-            shape="circle"
-            onClick={handleIncrement}
-            className={styles.buttonMinusAndPlus}
-          />
-        </div>
-      )}
+      <AddToCart item={item} />
     </Card>
   )
 }

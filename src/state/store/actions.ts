@@ -31,7 +31,7 @@ export const decrementProductAction = (
   payload: id,
 })
 
-export const deleteProductAction = (id: number): Action => ({
+export const deleteProductAction = (id: string): Action => ({
   type: ACTION_TYPES.DELETE_PRODUCT,
   payload: id,
 })

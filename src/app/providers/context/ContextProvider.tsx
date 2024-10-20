@@ -10,7 +10,7 @@ export interface ContextProps {
   addProductToCart: (product: ProductType) => void
   incrementProduct: (id: Pick<ProductType, 'id'>) => void
   decrementProduct: (id: Pick<ProductType, 'id'>) => void
-  deleteProduct: (id: number) => void
+  deleteProduct: (id: string) => void
   deleteZeroAmount: VoidFunction
   resetCart: VoidFunction
   switchToList: VoidFunction
@@ -72,7 +72,7 @@ const ContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
     dispatch(actions.decrementProductAction(id))
   }
 
-  const deleteProduct = (id: number) => {
+  const deleteProduct = (id: string) => {
     dispatch(actions.deleteProductAction(id))
   }
 

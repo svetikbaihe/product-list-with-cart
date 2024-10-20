@@ -40,7 +40,7 @@ export type Action =
   | ActionItem<ACTION_TYPES.CLOSE_MODAL, undefined>
   | ActionItem<ACTION_TYPES.INCREMENT_PRODUCT, Pick<ProductType, 'id'>>
   | ActionItem<ACTION_TYPES.DECREMENT_PRODUCT, Pick<ProductType, 'id'>>
-  | ActionItem<ACTION_TYPES.DELETE_PRODUCT, number>
+  | ActionItem<ACTION_TYPES.DELETE_PRODUCT, string>
   | ActionItem<ACTION_TYPES.DELETE_ZERO_AMOUNT, undefined>
   | ActionItem<ACTION_TYPES.RESET_CART, undefined>
   | ActionItem<ACTION_TYPES.SWITCH_TO_LIST, undefined>

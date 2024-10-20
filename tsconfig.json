@@ -61,7 +61,10 @@
       "@assets/*": ["./assets/*"],
 
       "@app": ["./app"],
-      "@app/*": ["./app/*"]
+      "@app/*": ["./app/*"],
+
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"]
     }
   },
   "homepage": ".",

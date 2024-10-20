@@ -1,0 +1,40 @@
+.dessert_details_card {
+  @apply flex h-full flex-col p-4 550:items-center 550:pt-16 lg:flex-row lg:items-stretch lg:gap-7;
+  @apply ml-4 mt-3 lg:justify-center;
+}
+
+.dessert_details_img {
+  @apply mb-6;
+}
+
+.card_body {
+  @apply flex flex-col p-0 !important;
+}
+
+.name_price_container {
+  @apply mb-6 !important;
+}
+
+.dessert_details_title {
+  @apply text-xl uppercase lg:tracking-wider !important;
+}
+
+.dessert_details_price {
+  @apply text-base font-semibold text-error;
+}
+
+.dessert_details_btn {
+  @apply relative bg-red-800;
+}
+
+.ingredients {
+  @apply flex-wrap divide-x;
+}
+
+.ingredient {
+  @apply pl-2;
+}
+
+.back_btn {
+  @apply ml-5 mt-4 flex items-center gap-2;
+}

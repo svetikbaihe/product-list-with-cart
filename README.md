@@ -33,7 +33,7 @@ Users should be able to:
   size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 ![Desktop-grid](public/images/screenshots/desktop_grid.png)
 ![Desktop-list](public/images/screenshots/desktop_list.png)
@@ -94,6 +94,9 @@ setting up the project from scratch is truly a distinct form of art.
 
 - [React](https://react.dev/) - Everyone who learns React should peruse this
   documentation.
+- [MockupBro](https://mockupbro.com/) - This is a great online mockup generator.
+- [PIXLR](https://pixlr.com/) - Perfect free online photo editor for easy and
+  quick collages.
 
 ## Author
 
