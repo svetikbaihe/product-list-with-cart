@@ -91,9 +91,14 @@ the design overall slightly differs from the original one. On top of that, I am
 planning to expand this project a little by adding routing and some pages just
 to practice react-router.
 
-*Update*
+_Update_
 
-As I mentioned before, I were going to practice React Router, and I did. I added several pages to the initial project: Home, Dessert Details, Delivery(with two subpages: Delivery Free and Delivery Direct). This was a big milestone for me as a beginner in React. I learned how to navigate through a website and actively used useMatches and custom hooks as well. As always, there is still a lot things to learn and to do.
+As I mentioned before, I were going to practice React Router, and I did. I added
+several pages to the initial project: Home, Dessert Details, Delivery(with two
+subpages: Delivery Free and Delivery Direct). This was a big milestone for me as
+a beginner in React. I learned how to navigate through a website and actively
+used useMatches and custom hooks as well. As always, there is still a lot things
+to learn and to do.
 
 ### Continued development
 
@@ -105,6 +110,8 @@ setting up the project from scratch is truly a distinct form of art.
 
 - [React](https://react.dev/) - Everyone who learns React should peruse this
   documentation.
+- [React Router](https://reactrouter.com/en/main) - Tutorial which quickly
+  introduces you to primary features of React router.
 - [MockupBro](https://mockupbro.com/) - This is a great online mockup generator.
 - [PIXLR](https://pixlr.com/) - Perfect free online photo editor for easy and
   quick collages.
