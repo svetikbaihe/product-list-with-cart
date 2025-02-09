@@ -3,11 +3,7 @@ import DeliveryTypeWrapper from '@modules/DeliveryTypeWrapper/component'
 
 const DeliveryFree: React.FC = () => {
   return (
-    <DeliveryTypeWrapper
-      infoDescription="If you would like to have a free delivery, you can 'cooperate' with
-        other customers. Our courier will deliver your order along with other
-        orders near you. It takes more time, however, you do not need to pay!"
-    />
+    <DeliveryTypeWrapper infoDescription="If you would like free delivery, you can team up with other customers. Our courier will deliver your order along with others nearby. However, it may take more time—but you won’t have to pay!" />
   )
 }
 
